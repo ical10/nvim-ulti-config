@@ -1,0 +1,9 @@
+[submodule "autoload/plugged/nvim-colorizer.lua"]
+	path = autoload/plugged/nvim-colorizer.lua
+	url = git@github.com:ical10/nvim-ulti-config.git
+[submodule "autoload/plugged/vim-anyfold"]
+	path = autoload/plugged/vim-anyfold
+	url = git@github.com:ical10/nvim-ulti-config.git
+[submodule "autoload/plugged/vim-eunuch"]
+	path = autoload/plugged/vim-eunuch
+	url = git@github.com:ical10/nvim-ulti-config.git
