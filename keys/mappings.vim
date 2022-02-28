@@ -61,3 +61,8 @@ nmap <Leader>gf :diffget //2<CR>
 
 " fold indented lines with <space>
 nnoremap <Leader>a za
+
+" hotkey for auto-pairs.vim
+" map meta key into control + d
+imap <C-d>e <M-e>
+imap <C-d>p <M-p>

@@ -1,6 +1,9 @@
 "set leader key
 let g:mapleader = "\<Space>"
 
+" enable automatic running of :RustFmt on buffer save
+let g:rustfmt_autosave = 1
+
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set wrap                                " Display long lines in wrapped format
@@ -40,14 +43,6 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 "set autochdir                           " Your working directory will always be the same as your working directory
 set foldmethod=indent                   " fold your code so you don't have to find the matching html tags
 set foldlevel=2                         " 2 indent levels
-" check if prettier and eslint are installed on the local node_modules folder
-if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
-  let g:coc_global_extensions += ['coc-prettier']
-endif
-
-if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
-  let g:coc_global_extensions += ['coc-eslint']
-endif
 set termguicolors                       " enable true colors support
 filetype plugin on                      " Enable filetype plugin for NERDCommenter
 autocmd vimenter * ++nested colorscheme gruvbox " recommended by morhetz/gruvbox to load it succesfully
